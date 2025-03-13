@@ -1,0 +1,50 @@
+<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>TypeScript DOOM</title><style>body {
+      margin: 0;
+      overflow: hidden;
+      background-color: #000;
+    }
+    canvas {
+      display: block;
+    }
+    #ui-container {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      color: #ff0000;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 24px;
+      text-shadow: 2px 2px 2px #000;
+    }
+    #health, #ammo {
+      margin: 10px 0;
+    }
+    #crosshair {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 20px;
+      height: 20px;
+      transform: translate(-50%, -50%);
+      pointer-events: none;
+    }
+    #game-over, #level-complete {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #ff0000;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 48px;
+      text-shadow: 2px 2px 2px #000;
+      display: none;
+    }
+    #loading {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #ff0000;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 36px;
+      text-shadow: 2px 2px 2px #000;
+    }</style><script defer="defer" src="./bundle.js"></script></head><body><div id="loading">LOADING...</div><div id="ui-container"><div id="health">HEALTH: 100</div><div id="ammo">AMMO: 50</div></div><img id="crosshair" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDIwIDIwIj4KICA8Y2lyY2xlIGN4PSIxMCIgY3k9IjEwIiByPSIxIiBmaWxsPSJyZWQiLz4KICA8bGluZSB4MT0iMTAiIHkxPSI1IiB4Mj0iMTAiIHkyPSIxNSIgc3Ryb2tlPSJyZWQiIHN0cm9rZS13aWR0aD0iMSIvPgogIDxsaW5lIHgxPSI1IiB5MT0iMTAiIHgyPSIxNSIgeTI9IjEwIiBzdHJva2U9InJlZCIgc3Ryb2tlLXdpZHRoPSIxIi8+Cjwvc3ZnPg==" alt="Crosshair"><div id="game-over">GAME OVER</div><div id="level-complete">LEVEL COMPLETE!</div></body></html>
